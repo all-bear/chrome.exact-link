@@ -1,0 +1,90 @@
+{
+  "appName": {
+    "message": "Exact Link",
+    "description": "The name of the application"
+  },
+  "appDescription": {
+    "message": "It allows you to generate a link to the exact section or paragraph of web page.",
+    "description": "The description of the application"
+  },
+  "browserAction": {
+    "message": "Link to this state.",
+    "description": "The browser action of the application"
+  },
+  "menuTitle": {
+    "message": "Link to this",
+    "description": "Menu title in context menu"
+  },
+  "cant_find_target_element": {
+    "message": "Oops, can't find target element.",
+    "description": "Message appears when can't find selected element, on creating link"
+  },
+  "cant_find_selector": {
+    "message": "Oops something has gone wrong, please try again.",
+    "description": "Message appears when can't find unique css selector for selected element, on creating link"
+  },
+  "cant_copy_to_clipboard": {
+    "message": "Oops something has gone wrong, please try again.",
+    "description": "Message appears when can't copy url to clipboard (maybe some exceptions)"
+  },
+  "create_success": {
+    "message": "Link was copied to the clipboard. Use Ctrl + V to paste it.",
+    "description": "Message appears when all alright and link was copied to clipboard"
+  },
+  "options_saved": {
+    "message": "Options saved",
+    "description": "Message appears when extension options are saved (on options.html page)"
+  },
+  "show_notification_option_label": {
+    "message": "Show notifications:",
+    "description": "Label for show notification option (on options.html page)"
+  },
+  "show_notification_option_val_yes_label": {
+    "message": "yes",
+    "description": "Label for show notification option value yes (on options.html page)"
+  },
+  "show_notification_option_val_no_label": {
+    "message": "no",
+    "description": "Label for show notification option value no (on options.html page)"
+  },
+  "top_offset_option_label": {
+    "message": "Top offset for on scroll (px):",
+    "description": "Label for top offset option (on options.html page)"
+  },
+  "find_offset_option_label": {
+    "message": "Find offset for element with id (px):",
+    "description": "Label for find offset option (on options.html page)"
+  },
+  "highlight_option_label": {
+    "message": "Highlight element after search",
+    "description": "Label for highlight option (on options.html page)"
+  },
+  "notification_option_label": {
+    "message": "Notifications",
+    "description": "Label for notification option (on options.html page)"
+  },
+  "load_delay_option_label": {
+    "message": "Delay to search target element after page load",
+    "description": "Label for load delay option (on options.html page)"
+  },
+  "load_attempt_interval_option_label": {
+    "message": "Interval between try to find target element after page load",
+    "description": "Label for load attempt interval option (on options.html page)"
+  },
+  "load_attempt_max_count_option_label": {
+    "message": "Max count of try to find target element after page load",
+    "description": "Label for load attempt max count option (on options.html page)"
+  },
+  "yesno_option_value_yes": {
+    "message": "Yes",
+    "description": "Label for yesno option yes (on options.html page)"
+  },
+  "yesno_option_value_no": {
+    "message": "No",
+    "description": "Label for yesno option no (on options.html page)"
+  },
+  "options_save_button_label": {
+    "message": "Save",
+    "description": "Label for save options button (on options.html page)"
+  }
+}

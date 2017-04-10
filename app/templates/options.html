@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title data-translate="appName"></title>
+  <!-- build:css /styles/options.css -->
+  <link href="/bower_components/chrome-lib-settings/dist/css/settings-ui.css" rel="stylesheet">
+  <!-- endbuild -->
+</head>
+
+<body>
+<form>
+  <section>
+    <div id="messages"></div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="top_offset_option_label"></span>
+      <input type="text" name="topOffset" class="control">
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="find_offset_option_label"></span>
+      <input type="text" name="findOffset" class="control">
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="highlight_option_label"></span>
+      <select name="highlight" class="control">
+        <option value="1" data-translate="yesno_option_value_yes"></option>
+        <option value="0" data-translate="yesno_option_value_no"></option>
+      </select>
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="notification_option_label"></span>
+      <select name="notifications" class="control">
+        <option value="1" data-translate="yesno_option_value_yes"></option>
+        <option value="0" data-translate="yesno_option_value_no"></option>
+      </select>
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="load_delay_option_label"></span>
+      <input type="text" name="loadDelay" class="control">
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="load_attempt_interval_option_label"></span>
+      <input type="text" name="loadAttemptInterval" class="control">
+    </div>
+  </section>
+  <section>
+    <div class="field">
+      <span class="label" data-translate="load_attempt_max_count_option_label"></span>
+      <input type="text" name="loadAttemptMaxCount" class="control">
+    </div>
+  </section>
+  <section>
+    <div>
+      <button id="save" class="control" data-translate="options_save_button_label"></button>
+    </div>
+  </section>
+</form>
+<!-- build:js /scripts/options.js -->
+<script src="/scripts/options.js"></script>
+<!-- endbuild --></body>
+</html>

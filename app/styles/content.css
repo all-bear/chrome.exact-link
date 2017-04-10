@@ -1,0 +1,23 @@
+.exact-link__element-highlight {
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: exact-link__element-highlight;
+  animation-name: exact-link__element-highlight;
+  transition: all .5s ease-in-out;
+}
+
+@-webkit-keyframes exact-link__element-highlight {
+  0%, 20%, 50%, 70%, 100% {height: 0;}
+  40% {height: 25px}
+  60% {height: 15px}
+  80% {height: 7px}
+}
+
+@keyframes exact-link__element-highlight {
+  0%, 20%, 50%, 70%, 100% {height: 0;}
+  40% {height: 25px}
+  60% {height: 15px}
+  80% {height: 7px}
+}
