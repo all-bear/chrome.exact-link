@@ -21,18 +21,6 @@ export class Target {
     return this._element;
   }
 
-  getAllParents(element) {
-    const parents = [];
-    let parent = element.parentNode;
-
-    while (parent) {
-      parents.push(parent);
-      parent = parent.parentNode;
-    }
-
-    return parents;
-  }
-
   get topElement() {
     return new Promise((resolve) => {
       Settings.load(settings => {
@@ -85,36 +73,9 @@ export class Target {
     return null;
   }
 
-  getClosestElementWithDomId(element) {
-    return new Promise((resolve) => {
-      Settings.load(settings => {
-        const elementArea = element.getBoundingClientRect();
-
-        resolve(this.getElementInSquare(
-          [
-            elementArea.left,
-            elementArea.top
-          ],
-          [
-            elementArea.left + elementArea.width,
-            elementArea.top + elementArea.height
-          ],
-          settings.findOffset,
-          (element) => element.id
-        ));
-      });
-    });
-  }
-
   getSelectorFor(element) {
     return new Promise(resolve => {
-      this.getClosestElementWithDomId(element).then((domIdElement) => {
-        if (domIdElement) {
-          return resolve(`#${domIdElement.id}`);
-        }
-
-        resolve(this.generator.getSelector(element));
-      });
+      resolve(this.generator.getSelector(element));
     });
   }
 
