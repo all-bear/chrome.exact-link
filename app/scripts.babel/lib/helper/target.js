@@ -29,7 +29,7 @@ export class Target {
         this.getElementInSquare(
           [
             0,
-            0
+            window.scrollY
           ],
           [
             window.innerWidth,
